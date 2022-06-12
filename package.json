@@ -1,0 +1,24 @@
+{
+  "name": "testing-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./js/script.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "dev": "concurrently \"watchify ./js/script.js -o bundle.js\" \"python -m http.server\"",
+    "bundle" : "browserify ./js/script.js > bundle.js",
+    "coverage": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "concurrently": "^7.2.1",
+    "coverage": "^0.4.1",
+    "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1",
+    "nodemon": "^2.0.16",
+    "watchify": "^4.0.0"
+  }
+}
